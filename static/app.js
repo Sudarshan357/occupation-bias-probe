@@ -291,7 +291,9 @@ $("#promptIn").addEventListener("input", () => { $("#occIn").value = ""; });
 
 let firstLoad = true;
 function loadResults() {
-  fetch("/api/results").then((r) => r.json()).then((d) => {
+  // A plain file, not /api/results, so the same build works on static hosting (Vercel)
+  // and through Flask locally, which serves it from results/ either way.
+  fetch("/results/api_results.json").then((r) => r.json()).then((d) => {
     const complete = d.images && d.models.length >= 3;
     // While probes are still running, re-check every 20 s and redraw when new results appear.
     if (!complete) setTimeout(loadResults, 20000);
