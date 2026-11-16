@@ -1,0 +1,5 @@
+# This Vercel project serves the precomputed dashboard as static files.
+app.py
+Dockerfile
+requirements.txt
+probe/
