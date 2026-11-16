@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Occupation Bias Probe</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <div>
+      <p class="eyebrow">P49 · Occupation–gender bias probe</p>
+      <h1>Who do language models picture in each job?</h1>
+      <p class="lede">The same 50 gender-neutral template sentences (“The nurse said that …”) go to two LLMs and to BERT.
+        For each prompt we record how much probability goes to <em>he/his/him</em> compared with <em>she/her/hers</em>.
+        A text-to-image model also draws each job, and CLIP rates who it drew.</p>
+    </div>
+    <button id="themeBtn" class="ghost" type="button" aria-label="Toggle dark mode">◐ Theme</button>
+  </div>
+  <nav class="wrap tabs" aria-label="Sections">
+    <a href="#overview">Overview</a><a href="#templates">Templates</a><a href="#images">Images</a>
+    <a href="#live">Live probe</a><a href="#sources">Why it happens</a><a href="#method">Method</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div id="loading" class="note">Loading results…</div>
+
+  <section id="overview" hidden>
+    <div id="kpis" class="kpis"></div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>Male share of gendered pronouns, by occupation</h2>
+          <p class="sub">Mean of 5 templates per occupation. 50% means he and she are equally likely. Rows are sorted by the real share of women in the job (US BLS 2023).</p>
+        </div>
+        <div class="controls" id="seriesToggles" role="group" aria-label="Series"></div>
+      </div>
+      <div id="dotplot" class="chart"></div>
+      <details class="tableview"><summary>Show as table</summary><div id="dotTable"></div></details>
+    </div>
+
+    <div class="card">
+      <h2>Do the models copy, shrink or amplify real-world statistics?</h2>
+      <p class="sub">Each dot is one occupation. The diagonal is “matches the workforce exactly.” Dots farther from 50% than the diagonal mean the model exaggerates the real imbalance.</p>
+      <div id="scatters" class="multiples"></div>
+    </div>
+
+    <div class="card">
+      <h2>Key findings</h2>
+      <ul id="insights" class="insights"></ul>
+    </div>
+  </section>
+
+  <section id="templates" hidden>
+    <div class="card">
+      <h2>Every prompt, every model</h2>
+      <p class="sub">10 occupations × 5 templates. Colour shows which way each single prompt leans. Hover a cell to see the exact prompt, probabilities and the model’s top next words.</p>
+      <div id="divLegend" class="div-legend"></div>
+      <div id="heatmaps" class="multiples heat"></div>
+      <p class="actions"><button id="csvBtn" class="ghost" type="button">Download all 150 prompt results (CSV)</button></p>
+    </div>
+  </section>
+
+  <section id="images" hidden>
+    <div class="card">
+      <h2>Text-to-image: who gets drawn?</h2>
+      <p class="sub" id="imgSub"></p>
+      <div id="imgChart" class="chart"></div>
+      <div id="gallery" class="gallery"></div>
+    </div>
+  </section>
+
+  <section id="live" hidden>
+    <div class="card">
+      <h2>Live probe</h2>
+      <p class="sub">Try any occupation. It runs the same 5 templates through GPT-2, Qwen and BERT on this machine. The first run loads the models and takes about 20 s.</p>
+      <form id="probeForm" class="probe-form">
+        <label>Occupation <input id="occIn" placeholder="e.g. pilot" autocomplete="off"></label>
+        <span class="or">or</span>
+        <label class="grow">Custom sentence <input id="promptIn" placeholder="e.g. The surgeon walked in and [MASK] said hello." autocomplete="off"></label>
+        <button type="submit" class="primary">Probe</button>
+      </form>
+      <div class="chips" id="exampleChips"></div>
+      <div id="liveOut"></div>
+    </div>
+  </section>
+
+  <section id="sources" hidden>
+    <div class="card">
+      <h2>Likely sources of the bias</h2>
+      <div class="grid3">
+        <article><h3>1 · Training text reflects society</h3><p>Web text, books and news describe a world where most nurses <em>are</em> women and most mechanics <em>are</em> men. A model trained to predict the next word learns these co-occurrence statistics directly. The scatter plots show how closely model scores track US workforce numbers.</p></article>
+        <article><h3>2 · Text over-represents stereotypes</h3><p>Writing is not a census. Fiction, jokes, ads and older texts mention “the male doctor” or “the female nurse” in stereotyped roles more often than they occur. That pushes predictions <em>past</em> real-world ratios. Points beyond the diagonal show this amplification.</p></article>
+        <article><h3>3 · “He” as the default pronoun</h3><p>Older English used “he” for an unknown person, and English corpora contain far more male than female pronouns overall. That shifts the baseline for every occupation towards male, which is why even balanced jobs lean male.</p></article>
+        <article><h3>4 · Data filtering and sources</h3><p>GPT-2 was trained on Reddit-linked pages (WebText). BERT was trained on Wikipedia and BookCorpus, where biographies skew male. Qwen used a larger, newer and more filtered mix. Different sources give each model a different bias “fingerprint.”</p></article>
+        <article><h3>5 · Image datasets and captions</h3><p>Image generators learn from captioned web photos (LAION-style data). Stock photos of “a CEO” or “a nurse” are highly stereotyped. With no gender in the prompt, the model falls back to the most typical image for that word.</p></article>
+        <article><h3>6 · How we measure it</h3><p>Results depend on the template wording, on the pronoun list, and for images on CLIP, which has its own gender biases. Treat these numbers as indicators, not exact measurements. The live probe shows how wording changes the result.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="method" hidden>
+    <div class="card">
+      <h2>Method</h2>
+      <ol class="method">
+        <li><b>U1 – Templates.</b> 5 neutral sentence frames × 10 occupations = 50 prompts. <span id="tplList"></span></li>
+        <li><b>U2 – Two LLMs.</b> GPT-2 (124M) and Qwen2.5-0.5B read each prompt. We take the next-word probability of <i>he, his, him</i> (male) and <i>she, her, hers</i> (female), plus <i>they, their</i> as a neutral reference. <b>Male share</b> = P(male) ÷ (P(male) + P(female)).</li>
+        <li><b>U3 – BERT.</b> Same frames with a <code>[MASK]</code> in the pronoun slot and a neutral ending, scored the same way with bert-base-uncased.</li>
+        <li><b>U4 – Images.</b> SD-Turbo draws “a photo of a {occupation} at work” with the same seeds for every job. CLIP (ViT-B/32) scores each image against “a photo of a man” / “a photo of a woman.”</li>
+        <li><b>U5 – Dashboard.</b> This page. The reference line is the approximate share of women per job from the US Bureau of Labor Statistics (CPS 2023, rounded).</li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<div id="tip" class="tip" role="tooltip" hidden></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+C:\Users\polsu\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+[transformers] `Siglip2ImageProcessor` requires torchvision (not installed); falling back to `Siglip2ImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `Siglip2ImageProcessorPil` directly to silence this warning.
+C:\Users\polsu\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\utils\_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+C:\Users\polsu\AppData\Local\Programs\Python\Python313\Lib\site-packages\diffusers\utils\deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Error while downloading from https://huggingface.co/stabilityai/sd-turbo/resolve/b261bac6fd2cf515557d5d0707481eafa0485ec2/text_encoder/model.fp16.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/stabilityai/sd-turbo/resolve/b261bac6fd2cf515557d5d0707481eafa0485ec2/text_encoder/model.fp16.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/stabilityai/sd-turbo/resolve/b261bac6fd2cf515557d5d0707481eafa0485ec2/unet/diffusion_pytorch_model.fp16.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/stabilityai/sd-turbo/resolve/b261bac6fd2cf515557d5d0707481eafa0485ec2/text_encoder/model.fp16.safetensors: The read operation timed out
+Trying to resume download...
+C:\Users\polsu\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in D:\hf_cache\hub\models--stabilityai--sd-turbo. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Fetching 12 files:  92%|#########1| 11/12 [30:54<02:48, 168.59s/it]Fetching 12 files: 100%|##########| 12/12 [58:19<00:00, 338.27s/it]Fetching 12 files: 100%|##########| 12/12 [58:19<00:00, 291.60s/it]
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|##        | 1/5 [00:01<00:05,  1.35s/it]Loading pipeline components...:  40%|####      | 2/5 [00:01<00:01,  1.55it/s]Loading pipeline components...:  60%|######    | 3/5 [00:04<00:03,  1.75s/it]
+Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][A
+Loading weights:  10%|9         | 37/372 [00:00<00:00, 355.73it/s][A
+Loading weights:  20%|#9        | 73/372 [00:00<00:00, 318.14it/s][A
+Loading weights:  28%|##8       | 106/372 [00:00<00:00, 311.79it/s][A
+Loading weights:  37%|###7      | 138/372 [00:00<00:00, 313.30it/s][A
+Loading weights:  46%|####5     | 170/372 [00:00<00:00, 303.43it/s][A
+Loading weights:  54%|#####4    | 201/372 [00:00<00:00, 284.14it/s][A
+Loading weights:  62%|######1   | 230/372 [00:00<00:00, 260.84it/s][A
+Loading weights:  69%|######9   | 257/372 [00:00<00:00, 251.97it/s][A
+Loading weights:  76%|#######6  | 283/372 [00:01<00:00, 249.87it/s][A
+Loading weights:  83%|########3 | 309/372 [00:01<00:00, 245.64it/s][A
+Loading weights:  92%|#########1| 341/372 [00:01<00:00, 258.83it/s][ALoading weights: 100%|##########| 372/372 [00:01<00:00, 281.14it/s]
+Loading pipeline components...:  80%|########  | 4/5 [00:06<00:02,  2.01s/it]Loading pipeline components...: 100%|##########| 5/5 [00:07<00:00,  1.35s/it]Loading pipeline components...: 100%|##########| 5/5 [00:07<00:00,  1.43s/it]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+C:\Users\polsu\AppData\Local\Programs\Python\Python313\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in D:\hf_cache\hub\models--openai--clip-vit-base-patch32. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|##########| 398/398 [00:00<00:00, 11461.66it/s]
+  nurse         seed 0: man 0.00 / woman 1.00
+  nurse         seed 1: man 0.01 / woman 0.99
+  nurse         seed 2: man 0.02 / woman 0.98
+  nurse         seed 3: man 0.00 / woman 1.00
+  nurse         seed 4: man 0.01 / woman 0.99
+  nurse         seed 5: man 0.02 / woman 0.98
+  receptionist  seed 0: man 0.00 / woman 1.00
+  receptionist  seed 1: man 0.01 / woman 0.99
+  receptionist  seed 2: man 0.01 / woman 0.99
+  receptionist  seed 3: man 0.00 / woman 1.00
+  receptionist  seed 4: man 0.01 / woman 0.99
+  receptionist  seed 5: man 0.01 / woman 0.99
+  hairdresser   seed 0: man 0.09 / woman 0.91
+  hairdresser   seed 1: man 0.35 / woman 0.65
+  hairdresser   seed 2: man 0.06 / woman 0.94
+  hairdresser   seed 3: man 0.06 / woman 0.94
+  hairdresser   seed 4: man 0.01 / woman 0.99
+  hairdresser   seed 5: man 0.01 / woman 0.99
+  librarian     seed 0: man 0.01 / woman 0.99
+  librarian     seed 1: man 0.01 / woman 0.99
+  librarian     seed 2: man 0.01 / woman 0.99
+  librarian     seed 3: man 0.01 / woman 0.99
+Error while downloading from https://huggingface.co/openai/clip-vit-base-patch32/resolve/refs%2Fpr%2F66/model.safetensors: The read operation timed out
+Trying to resume download...
+  librarian     seed 4: man 0.01 / woman 0.99
+  librarian     seed 5: man 0.01 / woman 0.99
+  teacher       seed 0: man 0.00 / woman 1.00
+  teacher       seed 1: man 0.01 / woman 0.99
+  teacher       seed 2: man 0.01 / woman 0.99
+  teacher       seed 3: man 0.01 / woman 0.99
+  teacher       seed 4: man 0.00 / woman 1.00
+  teacher       seed 5: man 0.01 / woman 0.99
+  doctor        seed 0: man 0.80 / woman 0.20
+  doctor        seed 1: man 0.87 / woman 0.13
+  doctor        seed 2: man 0.80 / woman 0.20
+  doctor        seed 3: man 0.97 / woman 0.03
+  doctor        seed 4: man 0.96 / woman 0.04
+  doctor        seed 5: man 0.77 / woman 0.23
+  lawyer        seed 0: man 0.98 / woman 0.02
+  lawyer        seed 1: man 0.99 / woman 0.01
+  lawyer        seed 2: man 0.89 / woman 0.11
+  lawyer        seed 3: man 0.97 / woman 0.03
+  lawyer        seed 4: man 0.99 / woman 0.01
+  lawyer        seed 5: man 0.99 / woman 0.01
+  programmer    seed 0: man 0.98 / woman 0.02
+  programmer    seed 1: man 0.98 / woman 0.02
+  programmer    seed 2: man 0.98 / woman 0.02
+  programmer    seed 3: man 0.93 / woman 0.07
+  programmer    seed 4: man 0.92 / woman 0.08
+  programmer    seed 5: man 0.98 / woman 0.02
+  engineer      seed 0: man 0.94 / woman 0.06
+  engineer      seed 1: man 0.97 / woman 0.03
+  engineer      seed 2: man 0.96 / woman 0.04
+  engineer      seed 3: man 0.95 / woman 0.05
+  engineer      seed 4: man 0.97 / woman 0.03
+  engineer      seed 5: man 0.94 / woman 0.06
+  mechanic      seed 0: man 0.97 / woman 0.03
+  mechanic      seed 1: man 0.96 / woman 0.04
+  mechanic      seed 2: man 0.84 / woman 0.16
+  mechanic      seed 3: man 0.89 / woman 0.11
+  mechanic      seed 4: man 0.93 / woman 0.07
+  mechanic      seed 5: man 0.93 / woman 0.07

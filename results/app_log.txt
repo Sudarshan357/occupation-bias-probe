@@ -1,0 +1,163 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [05/Nov/2026 22:55:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /api/results HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/hairdresser_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/hairdresser_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/hairdresser_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/hairdresser_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/hairdresser_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/hairdresser_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/receptionist_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/receptionist_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/receptionist_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/receptionist_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/receptionist_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/receptionist_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/nurse_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/nurse_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/nurse_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/nurse_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/nurse_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/nurse_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/librarian_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/librarian_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/librarian_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/librarian_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/librarian_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/librarian_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/teacher_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/teacher_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/teacher_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/teacher_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/teacher_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/teacher_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/doctor_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/doctor_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/doctor_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/doctor_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/doctor_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/doctor_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/lawyer_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/lawyer_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/lawyer_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/lawyer_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/lawyer_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/lawyer_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/programmer_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/programmer_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/programmer_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/programmer_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/programmer_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/programmer_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/engineer_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/engineer_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/engineer_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/engineer_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/engineer_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/engineer_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/mechanic_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/mechanic_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/mechanic_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/mechanic_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/mechanic_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:55:40] "GET /results/images/mechanic_5.jpg HTTP/1.1" 200 -
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  11%|#         | 16/148 [00:00<00:00, 140.13it/s]Loading weights:  21%|##        | 31/148 [00:00<00:00, 127.56it/s]Loading weights:  30%|##9       | 44/148 [00:00<00:00, 117.56it/s]Loading weights:  40%|###9      | 59/148 [00:00<00:00, 123.64it/s]Loading weights:  49%|####8     | 72/148 [00:00<00:00, 84.99it/s] Loading weights: 100%|##########| 148/148 [00:00<00:00, 202.26it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  10%|#         | 29/290 [00:00<00:00, 286.73it/s]Loading weights:  20%|##        | 58/290 [00:00<00:00, 246.45it/s]Loading weights:  29%|##8       | 84/290 [00:00<00:00, 241.91it/s]Loading weights:  38%|###7      | 109/290 [00:00<00:00, 235.64it/s]Loading weights:  46%|####5     | 133/290 [00:00<00:00, 231.33it/s]Loading weights:  54%|#####4    | 157/290 [00:00<00:00, 225.98it/s]Loading weights:  62%|######2   | 180/290 [00:00<00:00, 187.41it/s]Loading weights:  69%|######8   | 200/290 [00:00<00:00, 180.18it/s]Loading weights:  78%|#######7  | 225/290 [00:01<00:00, 192.81it/s]Loading weights:  86%|########6 | 250/290 [00:01<00:00, 207.99it/s]Loading weights:  94%|#########3| 272/290 [00:01<00:00, 211.26it/s]Loading weights: 100%|##########| 290/290 [00:01<00:00, 217.90it/s]
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:   3%|3         | 7/202 [00:00<00:02, 66.63it/s]Loading weights:  11%|#         | 22/202 [00:00<00:01, 98.57it/s]Loading weights:  22%|##2       | 45/202 [00:00<00:01, 148.53it/s]Loading weights:  34%|###4      | 69/202 [00:00<00:00, 181.42it/s]Loading weights: 100%|##########| 202/202 [00:00<00:00, 445.82it/s]
+[transformers] [1mBertForMaskedLM LOAD REPORT[0m from: bert-base-uncased
+Key                         | Status     |  | 
+----------------------------+------------+--+-
+cls.seq_relationship.bias   | UNEXPECTED |  | 
+bert.pooler.dense.weight    | UNEXPECTED |  | 
+cls.seq_relationship.weight | UNEXPECTED |  | 
+bert.pooler.dense.bias      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+127.0.0.1 - - [05/Nov/2026 22:57:02] "POST /api/probe HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:57:49] "GET /api/results HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 22:57:49] "GET /results/images/nurse_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:25] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:25] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:25] "GET /api/results HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:25] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Nov/2026 23:03:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:26] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:26] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:26] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Nov/2026 23:03:26] "GET /api/results HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/hairdresser_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/hairdresser_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/hairdresser_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/hairdresser_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/hairdresser_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/hairdresser_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/receptionist_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/receptionist_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/receptionist_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/receptionist_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/receptionist_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/receptionist_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/nurse_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/nurse_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/nurse_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/nurse_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/nurse_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/nurse_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/librarian_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/librarian_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/librarian_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/librarian_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/librarian_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/librarian_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/teacher_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/teacher_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/teacher_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/teacher_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/teacher_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/teacher_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/doctor_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:28] "GET /results/images/doctor_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/doctor_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/doctor_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/doctor_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/doctor_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/lawyer_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/lawyer_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/lawyer_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/lawyer_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/lawyer_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/lawyer_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/programmer_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/programmer_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/programmer_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/programmer_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/programmer_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/programmer_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/engineer_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/engineer_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/engineer_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/engineer_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/engineer_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/engineer_5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/mechanic_0.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/mechanic_1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/mechanic_2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/mechanic_3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/mechanic_4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:29] "GET /results/images/mechanic_5.jpg HTTP/1.1" 200 -
+D:\Gen Ai CA\probe\models.py:63: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  words[w] = float(probs[ids[0]]) if len(ids) == 1 else 0.0
+127.0.0.1 - - [05/Nov/2026 23:03:47] "POST /api/probe HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 23:03:59] "POST /api/probe HTTP/1.1" 200 -
